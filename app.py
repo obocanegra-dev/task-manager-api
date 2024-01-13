@@ -67,5 +67,13 @@ def delete_task(id):
 def index():
     return jsonify({"message": "Task Manager API"})
 
+@app.errorhandler(404)
+def not_found(error):
+    return jsonify({"error": "Resource not found"}), 404
+
+@app.errorhandler(500)
+def server_error(error):
+    return jsonify({"error": "Internal server error"}), 500
+
 if __name__ == '__main__':
     app.run(debug=True)
