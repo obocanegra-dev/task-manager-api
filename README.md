@@ -11,7 +11,7 @@ Una API RESTful para gestión de tareas desarrollada con Python, Flask y SQLAlch
 
 1. Clonar repositorio:
 ```bash
-git clone [URL-del-repositorio]
+git clone https://github.com/obocanegra-dev/task-manager-api.git
 cd task-manager-api
 ```
 
